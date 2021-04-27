@@ -68,6 +68,7 @@ html::-webkit-scrollbar-thumb {
 
 .btn:hover {
   background: #ffcc00;
+  outline: none;
 }
 
 header {
@@ -245,5 +246,18 @@ header #menu-bar {
   }
   .home .content h3 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 80%;
+  }
+  .home .content h3 {
+    color: #ffcc00;
+  }
+  header .logo img {
+    width: 50%;
+    margin-left: 5px;
   }
 }
