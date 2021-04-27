@@ -187,10 +187,10 @@ header #menu-bar {
   html {
     font-size: 100%;
   }
-  .home::before,
+  /* .home::before,
   .home::after {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 768px) {
