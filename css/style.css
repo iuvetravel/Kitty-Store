@@ -254,7 +254,8 @@ header #menu-bar {
     font-size: 80%;
   }
   .home .content h3 {
-    color: #ffcc00;
+    padding-bottom: 2rem;
+    font-size: 3.2rem;
   }
   header .logo img {
     width: 50%;
