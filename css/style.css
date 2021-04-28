@@ -636,6 +636,7 @@ header #menu-bar {
     margin: 10px;
   }
   .food .box-container .box h3 {
+    margin-top: 4rem;
     position: absolute;
     top: 40%;
     left: 50%;
