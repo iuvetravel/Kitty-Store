@@ -421,9 +421,10 @@ header #menu-bar {
     font-size: 80%;
   }
   section {
-    padding: 15px 3%;
+    padding: 15px 5%;
   }
   .home .content h3 {
+    margin-top: 1rem;
     padding-bottom: 2rem;
     font-size: 3.2rem;
   }
