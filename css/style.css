@@ -463,6 +463,109 @@ header #menu-bar {
   background: #ffcc00;
 }
 
+/* Ask section */
+
+.ask {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../img/fluffy.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ask .row {
+  display: flex;
+  background: #fff;
+  margin: 2rem 0;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.ask .row .heading h1 {
+  color: var(--dark);
+}
+
+.ask .row .image {
+  flex: 1 1 40%;
+}
+
+.ask .row .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ask .row form {
+  flex: 1 1 60%;
+  background: #fff;
+  padding: 2rem;
+}
+
+.ask .row form .box {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #113443;
+  text-transform: none;
+  background: #eaf3f6;
+  width: 100%;
+}
+
+.ask .row form .question {
+  resize: none;
+  height: 10rem;
+}
+
+.ask .row form .box::placeholder {
+  text-transform: capitalize;
+}
+
+.footer {
+  background: #113443;
+  padding: 1rem 7%;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  flex: 1 1 15rem;
+  margin: 0;
+}
+
+.footer .box-container .box h3 {
+  font-size: 1.5rem;
+  color: #bfdfed;
+  padding: 0.3rem 0;
+}
+.footer .box-container .box p {
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.2rem 0.3rem;
+  text-decoration: none;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: #ffcc00;
+  font-weight: 700;
+}
+
+.box hr {
+  border-bottom: 1px solid #ffcc00;
+}
 /* ================================================================================================================== */
 /* Media Queries */
 
@@ -554,6 +657,9 @@ header #menu-bar {
   .food .box-container .box {
     width: 100%;
   }
+  .ask .row .image {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -580,6 +686,7 @@ header #menu-bar {
     color: #bfdfed;
   }
   .fur .image {
+    margin-top: 5rem;
     flex: 1 1 20rem;
     height: 25rem;
   }
@@ -658,5 +765,12 @@ header #menu-bar {
     top: 10%;
     opacity: 1;
     transition-delay: 0.5s;
+  }
+  .ask .heading {
+    margin-top: 5rem;
+    color: var(--dark);
+  }
+  .box hr {
+    border-bottom: 1px solid #ffcc00;
   }
 }
