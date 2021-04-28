@@ -362,6 +362,13 @@ header #menu-bar {
     opacity: 1;
     transition: 1s;
   }
+
+  .heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0 0.5rem;
+    color: #113443;
+  }
   .home .content {
     text-align: center;
   }
@@ -384,6 +391,13 @@ header #menu-bar {
   header .logo img {
     width: 50%;
     margin-left: 5px;
+  }
+
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0 0.5rem;
+    color: #bfdfed;
   }
   .toys .image {
     flex: 1 1 20rem;
