@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kittens® Store</title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -28,8 +28,8 @@
           <li><a href="#toys">Toys</a></li>
           <li><a href="#food">Food</a></li>
           <li><a href="#fur">PurrFur</a></li>
-          <li><a href="#ask">Ask us</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#ask">Contact</a></li>
+          
         </ul>
       </nav>
     </header>
@@ -38,7 +38,7 @@
 
     <!-- Home Section -->
     <section class="home" id="home">
-      <div class="content">
+      <div class="content" data-aos="fade-right">
         <h3>Fluffy Store for Kittens</h3>
         <p>
           Cats can rotate their ears 180 degrees. The hearing of the average cat
@@ -47,7 +47,7 @@
         <a href="#"><button class="btn">get started</button></a>
       </div>
 
-      <div class="image">
+      <div class="image" data-aos="fade-up">
         <img src="img/download.webp" alt="" />
       </div>
     </section>
@@ -260,10 +260,10 @@
       <div class="box-container">
           <div class="box">
               <h3>contact info</h3>
-              <p><i class="fas fa-map-marker-alt"></i> cicero, Illinois, USA, 3455</p>
-              <p><i class="fas fa-envelope"></i> myemail@kitty.miau</p>
-              <p><i class="fas fa-phone"></i> (+01).555.6789</p>
-              <p><i class="fas fa-phone"></i> (+01).111.2345</p>
+              <p><i class="fas fa-map-marker-alt"></i>cicero, Illinois, USA, 3455</p>
+              <p><i class="fas fa-envelope"></i>email@kitty.mi</p>
+              <p><i class="fas fa-phone"></i>(+01).555.6789</p>
+              <p><i class="fas fa-phone"></i>(+01).111.2345</p>
           </div>
           <hr>
           <div class="box">
@@ -295,12 +295,20 @@
             <a href="#">twitter</a>
             <a href="#">linkedin</a>
             <a href="#">you tube</a>
+            <br>
+            <br>
+            <img src="img/logos/kittzz.png" alt="">
             
         </div>
       </div>
   </div>
 
   <!-- End Footer -->
+  <!-- AOS Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous"></script>
+
+  <!-- End AOS Script -->
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -308,5 +316,15 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/main.js"></script>
+   
+    <!-- initializing aos -->
+
+    <script>
+        AOS.init({
+            delay:400,
+            duration:1000,
+        });
+    </script>
+
   </body>
 </html>
