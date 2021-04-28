@@ -627,9 +627,10 @@ header #menu-bar {
   .sleep .heading {
     margin-top: 4rem;
   }
-  .food {
+  .food .heading {
     padding: 2rem;
   }
+
   .food .box-container .box {
     width: 30rem;
     padding: 10px;
