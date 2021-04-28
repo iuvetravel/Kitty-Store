@@ -773,4 +773,25 @@ header #menu-bar {
   .box hr {
     border-bottom: 1px solid #ffcc00;
   }
+  .footer .box-container .box h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #bfdfed;
+    padding: 0.3rem 0;
+  }
+  .footer .box-container .box p {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+
+  .footer .box-container .box a {
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.2rem 0.3rem;
+    text-decoration: none;
+    display: block;
+  }
 }
