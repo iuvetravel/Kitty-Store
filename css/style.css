@@ -483,6 +483,10 @@ header #menu-bar {
     padding: 10px;
     margin: 10px;
   }
+
+  .home .content h3 {
+    margin-top: 2rem;
+  }
   .toys .heading {
     margin-top: 6rem;
   }
