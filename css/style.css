@@ -483,7 +483,9 @@ header #menu-bar {
     padding: 10px;
     margin: 10px;
   }
-  .toys,
+  .toys .heading {
+    margin-top: 4rem;
+  }
   .sleep .heading {
     margin-top: 4rem;
   }
