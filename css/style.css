@@ -19,7 +19,7 @@
 }
 
 h1,
-h3 {
+h2 {
   font-family: "Krona One", sans-serif;
 }
 *::selection {
@@ -54,8 +54,9 @@ html::-webkit-scrollbar-thumb {
 }
 
 .btn {
-  font-size: 1.2rem;
-  padding: 0.7rem 3rem;
+  width: 250px;
+  font-size: 1.4rem;
+  padding: 10px 10px;
   border-radius: 5rem;
   margin-top: 1rem;
   background: none;
@@ -68,7 +69,24 @@ html::-webkit-scrollbar-thumb {
 
 .btn:hover {
   background: #ffcc00;
+  font-weight: 500;
+  color: #fff;
   outline: none;
+}
+
+.btn:active {
+  transform: translateY(6px);
+}
+
+.heading {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 0.5rem;
+  color: #113443;
+}
+.heading span {
+  font-family: "Krona One", sans-serif;
+  color: #ffcc00;
 }
 
 header {
@@ -180,6 +198,109 @@ header #menu-bar {
   padding: 1rem 0;
 }
 
+.toys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toys .image {
+  flex: 1 1 30rem;
+  height: 30rem;
+  background: url(../img/frame.webp), url(../img/kitty-03.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: screen;
+}
+
+.toys .content {
+  flex: 1 1 32rem;
+  padding: 2rem;
+}
+
+.toys .content h3 {
+  font-size: 3rem;
+  color: #ffcc00;
+}
+
+.toys .content p {
+  font-size: 1rem;
+  color: var(--dark);
+  padding: 1rem 0;
+}
+
+.sleep .list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 2rem 0;
+  border-top: 0.2rem dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 0.2rem dashed rgba(0, 0, 0, 0.2);
+}
+
+.sleep .list .btn {
+  text-align: center;
+  width: 250px;
+  margin: 1rem;
+}
+.sleep .list .btn.active,
+.sleep .list .btn:hover {
+  background: var(--light);
+  color: #fff;
+}
+
+.sleep .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+
+.sleep .row .image {
+  margin: 2rem;
+  padding: 1rem;
+  flex: 1 1 40rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: -1;
+}
+
+.sleep .row .image img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.sleep .row .content {
+  flex: 1 1 40rem;
+}
+
+.sleep .row .content .info {
+  padding: 1rem 0;
+}
+
+.sleep .row .content .info h3 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--ultra);
+}
+
+.sleep .row .content .info h3 span {
+  padding-right: 1rem;
+  color: #ffcc00;
+}
+
+.sleep .row .content .info p {
+  padding: 0.5rem 0;
+  padding-left: 4rem;
+  font-size: 1rem;
+  color: var(--dark);
+}
 /* ================================================================================================================== */
 /* Media Queries */
 
@@ -247,6 +368,9 @@ header #menu-bar {
   .home .content h3 {
     font-size: 2rem;
   }
+  .sleep .row {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 500px) {
@@ -260,5 +384,40 @@ header #menu-bar {
   header .logo img {
     width: 50%;
     margin-left: 5px;
+  }
+  .toys .image {
+    flex: 1 1 20rem;
+    height: 25rem;
+  }
+  .toys .content {
+    flex: 1 1 32rem;
+    padding: 2rem;
+  }
+
+  .toys .content h3 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #ffcc00;
+  }
+
+  .toys .content p {
+    font-size: 1rem;
+    color: var(--dark);
+    padding: 5px 0;
+  }
+  .toys .btn {
+    margin-left: 60px;
+  }
+  .sleep .row {
+    flex-wrap: wrap;
+  }
+  .sleep .list .btn {
+    text-align: center;
+    width: 130px;
+    margin: 10px;
+  }
+  .btn {
+    width: 130px;
+    padding: 5px 10px;
   }
 }
