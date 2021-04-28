@@ -39,6 +39,7 @@ section {
 
 body {
   overflow-x: hidden;
+  overflow-y: hidden;
   height: 200rem;
 }
 
@@ -96,7 +97,7 @@ header {
   z-index: 1000;
   width: 100%;
   background: #fff;
-  padding: 0 10%;
+  padding: 1rem 10%;
   box-shadow: 0 0.3rem 2rem rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
@@ -300,6 +301,41 @@ header #menu-bar {
   font-size: 1rem;
   color: var(--dark);
 }
+.toys {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../img/background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.toys .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.toys .box-container .box {
+  background: #fff;
+  width: 27rem;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  text-align: center;
+}
+
+.toys .box-container .box img {
+  height: 24rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
 
 /* ================================================================================================================== */
 /* Media Queries */
@@ -433,5 +469,14 @@ header #menu-bar {
   .btn {
     width: 150px;
     padding: 5px 10px;
+  }
+  .toys .heading {
+    color: var(--dark);
+  }
+  .toys .box-container .box {
+    background: #fff;
+    width: 30rem;
+    padding: 1rem;
+    margin: 1rem;
   }
 }
