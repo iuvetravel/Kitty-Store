@@ -420,6 +420,9 @@ header #menu-bar {
   html {
     font-size: 80%;
   }
+  section {
+    padding: 15px 3%;
+  }
   .home .content h3 {
     padding-bottom: 2rem;
     font-size: 3.2rem;
@@ -475,8 +478,11 @@ header #menu-bar {
   }
   .toys .box-container .box {
     background: #fff;
-    width: 30rem;
-    padding: 1rem;
-    margin: 1rem;
+    width: 35rem;
+    padding: 10px;
+    margin: 10px;
+  }
+  .home .content h3 {
+    padding-top: 15rem;
   }
 }
