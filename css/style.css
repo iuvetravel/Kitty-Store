@@ -400,7 +400,7 @@ header #menu-bar {
 
 .food .box-container .box h3 {
   position: absolute;
-  top: 40%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -408,7 +408,13 @@ header #menu-bar {
   font-size: 3rem;
   font-weight: 700;
   z-index: 1;
-  overflow: hidden;
+  opacity: 0;
+}
+
+.food .box-container .box:hover h3 {
+  top: 40%;
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 
 .food .box-container .box::before {
