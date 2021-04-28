@@ -535,19 +535,24 @@ header #menu-bar {
 }
 
 .footer .box-container .box {
-  flex: 1 1 15rem;
+  flex-basis: 25%;
   margin: 0;
 }
 
 .footer .box-container .box h3 {
   font-size: 1.5rem;
-  color: #bfdfed;
+  color: #ffcc00;
   padding: 0.3rem 0;
 }
 .footer .box-container .box p {
   font-size: 1rem;
   color: #fff;
-  padding: 1rem 0;
+  padding: 0.9rem 0.3rem;
+}
+
+.footer .box-container .box p i {
+  color: #ffcc00;
+  padding-right: 0.4rem;
 }
 
 .footer .box-container .box a {
@@ -566,6 +571,21 @@ header #menu-bar {
 .box hr {
   border-bottom: 1px solid #ffcc00;
 }
+.box .fa {
+  color: #ffcc00;
+}
+
+.box img {
+  border-top: 1px solid #ffcc00;
+  padding: 0 10px;
+  width: 325px;
+  border-bottom: 1px solid #ffcc00;
+
+  /* border-left: 1px solid #ffcc00;
+  border-right: 1px solid #ffcc00; */
+  border-radius: 50px;
+}
+
 /* ================================================================================================================== */
 /* Media Queries */
 
@@ -659,6 +679,10 @@ header #menu-bar {
   }
   .ask .row .image {
     display: none;
+  }
+  .footer .box-container .box {
+    flex: 100%;
+    margin: 0;
   }
 }
 
@@ -773,15 +797,22 @@ header #menu-bar {
   .box hr {
     border-bottom: 1px solid #ffcc00;
   }
+
+  .footer .box-container .box {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
   .footer .box-container .box h3 {
+    text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #ffcc00;
     padding: 0.3rem 0;
   }
   .footer .box-container .box p {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #fff;
     font-weight: 100;
     padding: 1rem 0;
