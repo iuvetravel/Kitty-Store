@@ -650,12 +650,12 @@ header #menu-bar {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     z-index: 1;
   }
   .food .box-container .box:hover h3 {
-    top: 30%;
+    top: 20%;
     opacity: 1;
     transition-delay: 0.5s;
   }
