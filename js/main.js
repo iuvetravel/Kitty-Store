@@ -3,11 +3,9 @@ $(document).ready(function () {
     $(this).toggleClass("fa-times");
     $(".navbar").toggleClass("nav-toggle");
   });
-
-  $(window).on("load scroll", function () {
+  $(window).on("scroll load", function () {
     $("#menu-bar").removeClass("fa-times");
     $(".navbar").removeClass("nav-toggle");
-
     $("section").each(function () {
       let top = $(window).scrollTop();
       let height = $(this).height();
@@ -20,10 +18,9 @@ $(document).ready(function () {
       }
     });
   });
-
-  $(".list .btn").click(function () {
+  $(".sleep .list .btn").click(function () {
     $(this).addClass("active").siblings().removeClass("active");
     let src = $(this).attr("data-src");
-    $(".menu .row .image img").attr("src", src);
+    $("#sleep-img").attr("src", src);
   });
 });
