@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kittens® Store</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -52,39 +51,17 @@
       </div>
     </section>
     <!-- End Home Section -->
-    <!-- Toys Section -->
-
-    <section class="fur" id="fur">
-      <div class="image"></div>
-      <div class="content">
-        <h3>something about Kittens</h3>
-        <p>
-          One of the most fun facts about kittens is that they are also born
-          with blue-gray eyes. Some breeds, like Siamese, will retain their blue
-          color, while most will change pigment during the first year of life.
-          After one year, they should have grown into their permanent eye color.
-        </p>
-        <p>
-          A muscular connection between a kitten's head muscles causes their
-          ears to wiggle when they've successfully latched on to the bottle.
-          This is a key indicator of healthy nursing.
-        </p>
-        <a href="#sleep"><button class="btn">learn more</button></a>
-      </div>
-    </section>
-
-    <!-- End Toys Section -->
-    <!-- Sleep Section -->
+        <!-- Sleep Section -->
     <section class="sleep" id="sleep">
       <h1 class="heading"> our most searched <span>beds</span></h1>
-      <ul class="list">
+      <ul class="list" data-aos="fade-down">
         <li class="btn" data-src="img/bed1.jpg">Royal</li>
         <li class="btn active" data-src="img/bed2.jpg">Imperial</li>
         <li class="btn" data-src="img/bed3.jpg">Retrofit</li>
         <li class="btn" data-src="img/bed4.jpg">Roccoco</li>
       </ul>
-      <div class="row">
-        <div class="image">
+      <div class="row" data-aos="fade-right">
+        <div class="image" data-aos="fade-left">
           <img src="img/bed1.jpg" id="sleep-img" />
         </div>
         <div class="content">
@@ -121,7 +98,7 @@
     <section class="toys" id="toys">
         <h1 class="heading"> most <span> playfull </span>toys</h1>
         <div class="box-container">
-            <div class="box">
+            <div class="box" data-aos="fade-right">
                 <img src="img/toy1.jpg" alt="">
                 <h3>fluffy birdie</h3>
                 <div class="stars">
@@ -134,7 +111,7 @@
                 <div class="price">£02.80</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-left">
                 <img src="img/toy2.jpg" alt="">
                 <h3>fluffy ball</h3>
                 <div class="stars">
@@ -147,7 +124,7 @@
                 <div class="price">£03.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-right">
                 <img src="img/toy3.jpg" alt="">
                 <h3>fluffy fly</h3>
                 <div class="stars">
@@ -160,7 +137,7 @@
                 <div class="price">£01.25</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-left">
                 <img src="img/toy4.jpg" alt="">
                 <h3>fluffy bells</h3>
                 <div class="stars">
@@ -181,42 +158,42 @@
     <section class="food" id="food">
         <h1 class="heading"> most <span> yummy </span>foods</h1>
         <div class="box-container">
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/09.jpg" alt="">
                 <h3>classic sauce</h3>
                 
                 <div class="price">£05.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/10.jpg" alt="">
                 <h3>savory sauce</h3>
                 
                 <div class="price">£05.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/11.jpg" alt="">
                 <h3>delicate sauce</h3>
                 
                 <div class="price">£05.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/08.jpg" alt="">
                 <h3>tuna sauce</h3>
                 
                 <div class="price">£05.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/07.jpg" alt="">
                 <h3>duck formula</h3>
                 
                 <div class="price">£05.50</div>
                 <a href="#"><button class="btn">add to cart</button></a>
             </div>
-            <div class="box">
+            <div class="box" data-aos="fade-up">
                 <img src="img/06.jpg" alt="">
                 <h3>chiken tuscany</h3>
                 
@@ -229,14 +206,36 @@
 
   <!-- End Food Gallery Section --> 
   
-  
+  <!-- PurrFur Section -->
+
+  <section class="fur" id="fur">
+    <div class="image" data-aos="fade-right"></div>
+    <div class="content" data-aos="fade-left">
+      <h3>something about Kittens</h3>
+      <p>
+        One of the most fun facts about kittens is that they are also born
+        with blue-gray eyes. Some breeds, like Siamese, will retain their blue
+        color, while most will change pigment during the first year of life.
+        After one year, they should have grown into their permanent eye color.
+      </p>
+      <p>
+        A muscular connection between a kitten's head muscles causes their
+        ears to wiggle when they've successfully latched on to the bottle.
+        This is a key indicator of healthy nursing.
+      </p>
+      <a href="#sleep"><button class="btn">learn more</button></a>
+    </div>
+  </section>
+
+  <!-- PurrFur Section -->
+
   <!-- Ask Section -->
 
 <section class="ask" id="ask">
 
     <h1 class="heading"> ask <span> away </span>anything</h1>
     <div class="row">
-        <form action="">
+        <form action="" data-aos="fade-right">
             <input type="text" placeholder="your name" class="box">
             <input type="email" placeholder="your email" class="box">
             <input type="password" placeholder="your password" class="box">
@@ -244,7 +243,7 @@
             <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your inquiry"></textarea>
             <input type="submit" value="ask away" class="btn">
         </form>
-        <div class="image">
+        <div class="image" data-aos="fade-left">
             <img src="img/kitty-05.jpg" alt="">
         </div>
     </div>
@@ -319,12 +318,10 @@
    
     <!-- initializing aos -->
 
-    <script>
-        AOS.init({
-            delay:400,
-            duration:1000,
-        });
-    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   </body>
 </html>
